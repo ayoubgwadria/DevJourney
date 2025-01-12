@@ -7,14 +7,13 @@
 }
 .hero{
     min-height: 100vh;
-    background-color:#08A04B;
+    background-color: rgba(8, 160, 75, 0.8);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 .hero-content{
     text-align: center;
@@ -32,12 +31,34 @@
 .hero-content .cta-button{
     font-size: 18px;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #0f5c23;
     color: #fff;
     border-radius: 5px;
     text-decoration: none;
     transition: 0.3s ease;
 }
 .hero-content .cta-button:hover{
-    background-color: #0056b3;
+    background-color: rgba(8, 160, 75, 0.8);;
+}
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 400px;
+    left: 145vh;
+    width: 500px;
+    height: 500px;
+    z-index: -1; 
+    background: url(../../../../assets/bg1.png) no-repeat center center;
+    background-size: cover;
+}
+.hero::after {
+    content: '';
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: -2; 
+    background: url(../../../../assets/background.png) no-repeat center center;
+    background-size: cover;
+    backdrop-filter: blur(8px); 
 }
