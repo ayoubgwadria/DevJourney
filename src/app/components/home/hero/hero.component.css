@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+.hero{
+    min-height: 100vh;
+    background-color:#08A04B;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.hero-content{
+    text-align: center;
+    color: #fff;
+
+}
+.hero-content h1{
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.hero-content .cta-button{
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.hero-content .cta-button:hover{
+    background-color: #0056b3;
+}

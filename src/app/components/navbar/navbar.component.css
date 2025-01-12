@@ -1,0 +1,130 @@
+/* General Styles */
+.header {
+    background-color: #1a2b48; 
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Logo */
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .logo h1 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  /* Navigation */
+  .navigation {
+    position: relative;
+  }
+  
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-menu li {
+    margin-left: 1.5rem;
+  }
+  
+  .nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .nav-menu a:hover {
+    background-color: #3498db; 
+    color: #fff;
+  }
+  
+  /* Mobile Navigation */
+  .nav-toggle {
+    display: none;
+  }
+  
+  .nav-toggle-label {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .nav-toggle-label span {
+    display: block;
+    background-color: #fff;
+    height: 2px;
+    width: 2rem;
+    border-radius: 2px;
+    position: relative;
+  }
+  
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    height: 2px;
+    width: 2rem;
+    border-radius: 2px;
+  }
+  
+  .nav-toggle-label span::before {
+    top: -7px;
+  }
+  
+  .nav-toggle-label span::after {
+    top: 7px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      background-color: #1a2b48;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      left: 0;
+      text-align: center;
+      z-index: 10;
+    }
+  
+    .nav-menu li {
+      margin: 0.5rem 0;
+    }
+  
+    .nav-toggle:checked ~ .nav-menu {
+      display: flex;
+    }
+  
+    .nav-toggle-label {
+      display: block;
+      padding: 1rem;
+    }
+  }
+  
