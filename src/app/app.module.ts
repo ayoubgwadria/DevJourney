@@ -11,6 +11,7 @@ import { HowItWorksComponent } from './components/home/how-it-works/how-it-works
 import { TestimonialsComponent } from './components/home/testimonials/testimonials.component';
 import { CtaComponent } from './components/home/cta/cta.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FooterComponent } from './components/footer/footer.component';
     HowItWorksComponent,
     TestimonialsComponent,
     CtaComponent,
-    FooterComponent
+    FooterComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
