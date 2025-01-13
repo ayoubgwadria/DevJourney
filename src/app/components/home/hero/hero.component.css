@@ -3,7 +3,7 @@
 .hero {
     min-height: 100vh; /* Full viewport height */
     width: 100%; /* Full viewport width */
-    background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
     display: flex;
     justify-content: center;
     align-items: center;

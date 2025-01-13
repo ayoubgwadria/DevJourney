@@ -1,10 +1,10 @@
-.header{
+.header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding: 20px 100px;
-  background: rgba(0, 0, 0, 0.95);
+  background: linear-gradient(to bottom, rgba(10, 14, 23, 0.95), rgba(0, 0, 0, 0.95));
   box-shadow: 0 0 10px #000;
   display: flex;
   justify-content: space-between;
@@ -12,6 +12,15 @@
   z-index: 100;
 }
 
+.header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #0f5c23, transparent);
+}
 
 .logo{
   font-size: 32px;
@@ -47,7 +56,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: #fff;
+  background: #0f5c23;
   transition: .3s;
 
 }

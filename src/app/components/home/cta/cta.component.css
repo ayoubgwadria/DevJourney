@@ -1,44 +1,83 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
 .cta {
-    background-color: #e74c3c;
-    color: #fff;
-    padding: 4rem 0;
-    text-align: center;
-}
+    background: linear-gradient(to bottom, rgba(10, 14, 23, 0.95), rgba(0, 0, 0, 0.95));
+    padding: 80px 0;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .logo-cta{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
 
-.container {
-    max-width: 800px;
+  
+  .container {
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1rem;
-}
-
-h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-p {
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  .cta-title {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .cta-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #0f5c23;
+    margin: 20px auto 0;
+  }
+  
+  .cta-description {
+    color: #ffffff;
     font-size: 1.2rem;
-    margin-bottom: 2rem;
-}
-
-.cta-button {
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
     display: inline-block;
-    background-color: #fff;
-    color: #e74c3c;
-    padding: 0.8rem 1.5rem;
-    text-decoration: none;
+    background-color: #0f5c23;
+    color: #ffffff;
+    font-size: 1.1rem;
+    padding: 15px 30px;
     border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #c0392b;
-    color: #fff;
-}
-
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #14742d;
+    transform: translateY(-3px);
+  }
+  
+  @media (max-width: 768px) {
+    .cta {
+      padding: 60px 0;
+    }
+  
+    .cta-title {
+      font-size: 2rem;
+    }
+  
+    .cta-description {
+      font-size: 1rem;
+    }
+  
+    .cta-button {
+      font-size: 1rem;
+      padding: 12px 24px;
+    }
+  }
+  
+  
